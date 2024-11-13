@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="p-4 bg-pink-500">
+        <div class="container flex items-center justify-between mx-auto">
+            <!-- Logo -->
+            <a href="#" class="font-serif text-4xl text-white">Venilla Flever</a>
+            
+            <!-- Links (hidden on small screens) -->
+            <div class="hidden space-x-6 font-serif text-xl md:flex">
+                <a href="index.html" class="text-white hover:text-pink-200">Home</a>
+                <a href="#about" class="text-white hover:text-pink-200">About</a>
+                <a href="#Categories" class="text-white hover:text-pink-200">Categories</a>
+                <a href="#contact" class="text-white hover:text-pink-200">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button (only visible on small screens) -->
+            <button class="p-2 text-white lg:hidden" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Links -->
+        <div id="mobileMenu" class="flex flex-col hidden mt-4 space-y-2 md:hidden ">
+            <a href="index.html" class="px-4 py-2 text-white hover:text-blue-200">Home</a>
+            <a href="#Categories" class="px-4 py-2 text-white hover:text-blue-200">Categories</a>
+            <a href="#about" class="px-4 py-2 text-white hover:text-blue-200">About</a>
+            <a href="#contact" class="px-4 py-2 text-white hover:text-blue-200">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="flex bg-gradient-to-r from-pink-600">
+        <div class=" md:m-10 md:pb-4 md:pt-15 md:h-300 mdw-400">
+            <img class="" src="images/p1.png" alt="">      
+        </div>
+        <div class="text-center md:ml-56 md:mt-20 ">
+            <h2 class="font-serif text-6xl text-transparent text-yellow-900 mr-28 md:text-red-800 to ml-9 focus-within:nt-bold mdtext-4xl md:text-7xl text-wrap bg-gradient-to-l from-pink-600 to-pink-500 bg-clip-text">Strawberry & <br> Venilla Flever </h2>
+            <h5 class="hidden font-serif text-3xl text-center ">------------------------------</h5>
+            <img class="w-80 h-80 md:w-96" src="images/p2.png" alt="">
+        </div>
+    </div>
+
+    <div id="about" class="flex flex-col p-10 lg:flex-row lg:space-x-4 bg-gradient-to-r from-pink-600">
+        <div class="p-8 scroll-p-8">
+            <h3 class="font-serif text-5xl text-center text-pink-950">About Our Shop</h3>
+            <p class="m-8 mt-8 text-2xl text-center text-amber-950">
+                "Welcome to our shop, where indulgence meets quality. Explore an array of creamy, delicious ice creams, made with fresh ingredients and unique flavors. From classic favorites to exciting new twists, every bite promises a delightful experience. Visit us and treat yourself to something sweet, refreshing, and satisfying—perfect for all occasions!"<br>
+                This expanded version adds some extra excitement and invites customers to enjoy the experience fully. Let me know if you'd like further adjustments!
+            </p>
+        </div>
+    
+        <div class="relative w-full max-w-lg mt-6 overflow-hidden rounded-lg shadow-lg lg:mt-0">
+            <img id="slideshow-image" class="object-cover h-64 ml-10 text-center lg:h-80 lg:ml-32" src="images/p3.png" alt="Slideshow Image">
+        </div>
+    </div>
+    
+
+    <div id="Categories" class="flex flex-col items-center px-4 py-10 bg-gradient-to-r from-pink-600 md:px-8 lg:px-16">
+        <h2 class="mb-10 font-serif text-4xl font-bold text-center text-transparent md:text-5xl lg:text-6xl bg-gradient-to-l from-pink-900 to-pink-700 bg-clip-text">Top Categories</h2>
+        
+        <div class="flex flex-wrap items-center justify-center md:gap-12 lg:gap-36 mt-7">
+            
+            <!-- First Image with Name and Link -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <p class="mb-2 font-serif text-2xl font-bold text-white md:text-3xl">Tea Ice Cream</p>
+                <a href="https://example1.com" class="mb-4 text-pink-950 hover:text-teal-600">ORDER</a>
+                <img class="object-cover mb-6 rounded-full h-72 md:h-4/5" src="https://images.pexels.com/photos/11185643/pexels-photo-11185643.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            
+            <!-- Second Image with Name and Link -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <p class="mb-2 font-serif text-2xl font-bold text-white md:text-3xl">Couple Ice Cream</p>
+                <a href="https://example2.com" class="mb-4 text-pink-950 hover:text-teal-600">ORDER</a>
+                <img class="object-cover mb-6 rounded-full h-72 md:h-4/5" src="https://images.pexels.com/photos/14849850/pexels-photo-14849850.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            
+            <!-- Third Image with Name and Link -->
+            <div class="flex flex-col items-center max-w-xs text-center">
+                <p class="mb-2 font-serif text-2xl font-bold text-white md:text-3xl">Cup Ice Cream</p>
+                <a href="https://example3.com" class="mb-4 text-pink-950 hover:text-teal-600">ORDER</a>
+                <img class="object-cover mb-6 rounded-full h-72 md:h-4/5" src="https://images.pexels.com/photos/4916027/pexels-photo-4916027.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+    
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="p-10 bg-gradient-to-r from-pink-600">
+        <h2 class="mb-6 font-serif text-4xl font-bold text-center text-pink-950">Customer Feedback</h2>
+    
+        <!-- Feedback Container (Responsive Layout) -->
+        <div class="flex flex-wrap justify-center gap-6 mx-auto max-w-8xl">
+    
+            <!-- Feedback 1 -->
+            <div class="w-full p-6 text-center bg-white rounded-lg shadow-lg sm:w-80">
+                <img class="w-24 h-24 mx-auto rounded-full" src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 1">
+                <p class="mt-4 text-xl font-semibold text-gray-800">"The best ice cream I’ve ever had! Highly recommend!"</p>
+                <p class="mt-2 text-gray-600">- John Doe</p>
+            </div>
+    
+            <!-- Feedback 2 -->
+            <div class="w-full p-6 text-center bg-white rounded-lg shadow-lg sm:w-80">
+                <img class="w-24 h-24 mx-auto rounded-full" src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 2">
+                <p class="mt-4 text-xl font-semibold text-gray-800">"Amazing flavors and a refreshing experience every time."</p>
+                <p class="mt-2 text-gray-600">- Jane Smith</p>
+            </div>
+    
+            <!-- Feedback 3 -->
+            <div class="w-full p-6 text-center bg-white rounded-lg shadow-lg sm:w-80">
+                <img class="w-24 h-24 mx-auto rounded-full" src="https://images.pexels.com/photos/1197132/pexels-photo-1197132.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 3">
+                <p class="mt-4 text-xl font-semibold text-gray-800">"Perfectly creamy and delicious! Can’t wait to come back."</p>
+                <p class="mt-2 text-gray-600">- Michael Johnson</p>
+            </div>
+    
+            <!-- Feedback 4 -->
+            <div class="w-full p-6 text-center bg-white rounded-lg shadow-lg sm:w-80">
+                <img class="w-24 h-24 mx-auto rounded-full" src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 4">
+                <p class="mt-4 text-xl font-semibold text-gray-800">"A delightful treat for the whole family! We love the variety."</p>
+                <p class="mt-2 text-gray-600">- Sarah Williams</p>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <div id="contact" class="p-10 bg-gradient-to-r from-pink-600">
+        <h2 class="mb-8 text-3xl font-semibold text-center text-pink-700">Contact Us</h2>
+        
+        <div class="flex flex-col max-w-6xl gap-10 mx-auto md:flex-row">
+            
+            <!-- Contact Form -->
+            <div class="w-full p-6 bg-white rounded-lg shadow-lg md:w-1/2">
+                <h3 class="mb-4 text-2xl font-semibold text-pink-600">Get in Touch</h3>
+                <form onsubmit="submitForm(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" name="name" class="w-full p-2 mt-1 border border-gray-300 rounded" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="email" class="w-full p-2 mt-1 border border-gray-300 rounded" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" rows="4" class="w-full p-2 mt-1 border border-gray-300 rounded" required></textarea>
+                    </div>
+                    <button type="submit" class="px-4 py-2 font-semibold text-white bg-pink-500 rounded hover:bg-pink-600">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="w-full overflow-hidden rounded-lg shadow-lg md:w-1/2">
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75379.1234404616!2d79.91157474005928!3d6.815120452664494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2507105492fab%3A0x5adc83492aee3910!2sMaharagama!5e0!3m2!1sen!2slk!4v1731438549884!5m2!1sen!2slk" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </div>
+    </div>
+    
+
+<!-- Footer -->
+<footer class="py-6 text-white sm:py-10 bg-gradient-to-r from-pink-500 to-pink-700">
+    <div class="container px-6 mx-auto text-center">
+        <div class="flex flex-wrap justify-between">
+            <!-- About Section -->
+            <div class="w-full mb-6 sm:w-1/2 md:w-1/4 sm:mb-0">
+                <h3 class="mb-4 text-xl font-semibold sm:text-2xl">About Us</h3>
+                <p class="text-sm leading-relaxed sm:text-base">
+                    Welcome to our ice cream shop, where quality meets indulgence. Explore a world of flavors made with love and fresh ingredients.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="w-full mb-6 sm:w-1/2 md:w-1/4 sm:mb-0">
+                <h3 class="mb-4 text-xl font-semibold sm:text-2xl">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="text-sm sm:text-base hover:underline">Home</a></li>
+                    <li><a href="#" class="text-sm sm:text-base hover:underline">Categories</a></li>
+                    <li><a href="#" class="text-sm sm:text-base hover:underline">About Us</a></li>
+                    <li><a href="#" class="text-sm sm:text-base hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="w-full mb-6 sm:w-1/2 md:w-1/4 sm:mb-0">
+                <h3 class="mb-4 text-xl font-semibold sm:text-2xl">Contact Us</h3>
+                <p class="text-sm sm:text-base">123 Ice Cream Lane, Maharagama City, 45678</p>
+                <p class="mt-2 text-sm sm:text-base">Phone: (123) 456-7890</p>
+                <p class="mt-2 text-sm sm:text-base">Email: info@icecreamshop.com</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="w-full mb-6 sm:w-1/2 md:w-1/4 sm:mb-0">
+                <h3 class="mb-4 text-xl font-semibold sm:text-2xl">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-6 border-gray-200">
+
+        <!-- Copyright -->
+        <div class="text-sm text-center">
+            &copy; 2024 Ice Cream Shop. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!-- Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
